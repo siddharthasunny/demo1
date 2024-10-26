@@ -1,0 +1,31 @@
+#include <stdio.h> 
+ 
+int main() { 
+    // Declare variables for name, ID, department, and semester 
+    char name[50]; 
+    int id; 
+    char department[50]; 
+    int semester; 
+ 
+    // Input data from the user 
+    printf("Enter your name: "); 
+    fgets(name, sizeof(name), stdin); // Using fgets to include spaces in the name 
+ 
+    printf("Enter your ID: "); 
+    scanf("%d", &id); 
+ 
+    printf("Enter your department: "); 
+    scanf("%s", department); // Note: This will only read a single word 
+ 
+    printf("Enter your semester: "); 
+    scanf("%d", &semester); 
+ 
+    // Display the information 
+    printf("\n--- Student Information ---\n"); 
+    printf("Name: %s", name); 
+    printf("ID: %d\n", id); 
+    printf("Department: %s\n", department); 
+    printf("Semester: %d\n", semester); 
+ 
+    return 0; 
+} 
